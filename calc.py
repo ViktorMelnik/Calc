@@ -13,8 +13,7 @@ class Calc_function(QMainWindow, Ui_App_Calc):
         super(Calc_function, self).__init__(*args, **kwargs)
         self.setWindowIcon(QIcon('calc.jpg'))
         self.setupUi(self)
-        self.state = True
-        
+                
         for n in range(0, 10):
             getattr(self, 'b_%s' % n).pressed.connect(lambda v=n: self.input_number(v))
         self.b_01.pressed.connect(lambda v=0.1: self.input_number(v))
