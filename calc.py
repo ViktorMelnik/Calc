@@ -82,7 +82,7 @@ class Calc_function(QMainWindow, Ui_App_Calc):
             try:
                 self.stack = [self.current_op(*self.stack)]
             except Exception:
-                self.numbersr.display('Err')
+                self.numbers.display('Error')
                 self.stack = [0]
             else:
                 self.current_op = None
