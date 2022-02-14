@@ -28,7 +28,7 @@ class Calc_function(QMainWindow, Ui_App_Calc):
         self.b_c.pressed.connect(self.reset)
         self.b_m.pressed.connect(self.memory_store)
         self.b_mr.pressed.connect(self.memory_recall)
-        self.memory = 0
+        self.memory = 0.01
         self.reset()
         self.show()
         
